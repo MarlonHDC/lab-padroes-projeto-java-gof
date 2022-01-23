@@ -1,5 +1,6 @@
 package com.padroes.gof;
 
+import com.padroes.gof.facade.Facade;
 import com.padroes.gof.singleton.SingletonEager;
 import com.padroes.gof.singleton.SingletonLazy;
 import com.padroes.gof.singleton.SingletonLazyHolder;
@@ -41,6 +42,10 @@ public class GofTest {
         robo.mover();
         robo.mover();
         robo.mover();
+
+        // Facade
+        Facade facade = new Facade();
+        facade.migrarCliente("Marlon", "52070-000");
 
     }
 }
